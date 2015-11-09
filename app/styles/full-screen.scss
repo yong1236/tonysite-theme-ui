@@ -1,0 +1,24 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+//让内层元素占满屏的要素是外层元素也必须是满屏的，因为内层元素尺寸百分比的计算是参照外层元素而言的
+html, body{
+  height: 100%;
+  overflow: hidden; //去除满屏后的滚动条
+}
+
+#container, .sections, .section{
+  height: 100%;
+  position: relative; //非常重要，直接影响到 jQuery取position的值
+}
+
+#container.full-horizontal{
+  width: 400%; //取决于section的个数
+
+  .section{
+    float: left;
+    width: 25%;
+  }
+}
