@@ -44,37 +44,6 @@ html,body{
   //z-index: -1;
 }
 
-.header{
-  z-index: +10;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  //background-color: #323436;
-  @include transition(all, 1s);
-
-  &-large{
-    background-color: rgba(255,255,255,0);
-    font-size: 24px;
-    padding: 30px 0;
-
-    .navbar-brand{
-      font-size: 24px;
-    }
-  }
-
-  &-default{
-    background-color: rgba(50,52,54,1);
-    font-size: 16px;
-    padding: 8px 0;
-  }
-
-  .navbar-brand{
-    color: #FFFFFF;
-  }
-
-}
-
 #section3{
   .container{
     height: 100%;
