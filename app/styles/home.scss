@@ -76,6 +76,8 @@ html,body{
 }
 
 #section3{
+  //background: url("../images/section3-bg.jpg");
+  border-top: 1px solid #555555;
   .container{
     height: 100%;
   }
@@ -85,10 +87,59 @@ html,body{
   }
 }
 .rand-item{
-  overflow: hidden;
+  //overflow: hidden;
+  position: absolute;
+  //width: 300px;
+  display: inline-block;
+  //height: 200px;
   width: 60px;
   height: 60px;
-  position: absolute;
-  background: #286090;
-  border-radius: 50%;
+  //float: left;
+  //margin: 30px;
+
+  img{
+    position: absolute;
+    float: left;
+    width: 60px;
+    height: 60px;
+    //margin-top: -30px;
+    //margin-left: -30px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: solid rgba(100, 100, 30, .5) 1px;
+  }
+
+  .info {
+    position: absolute;
+    width: 300px;
+    display: none;
+    background: rgba(10,10,10,.5);
+    color: #FFFFFF;
+    padding: 10px;
+  }
+
+  &:hover{
+    z-index: +100;
+
+    img{
+      border-bottom-right-radius: 0;
+      margin-left: -50%;
+      margin-top: -50%;
+      /*margin-left: -30px;
+      margin-top: -30px;
+      width: 60px !important;
+      height: 60px !important;*/
+    }
+
+    .info {
+      display: block;
+    }
+  }
+}
+
+#section4 {
+  //background: url("../images/section3-bg.jpg");
+  border-top: 1px solid #555555;
 }

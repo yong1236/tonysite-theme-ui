@@ -33,6 +33,7 @@
             height: size + "px"
           });
           $(item).find("img").width(size).height(size);
+          $(item).find(".info").css({top:(size/2-10)+"px",left:(size/2-10)+"px"});
         });
       }
     };
