@@ -18,66 +18,197 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/home.css -->
-  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/blog.css">
   <!-- endbuild -->
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Tony's Site</a>
-      </div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Tony's Site</a>
+    </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <form class="navbar-form navbar-left" role="search">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <!--<form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>-->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">首页</a></li>
+        <li class="active"><a href="blog_index.html">博客</a></li>
+        <li><a href="#">项目</a></li>
+        <li><a href="#">关于</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+<div class="jumbotron masthead">
+  <div id="particleground"></div>
+  <div id="particleground2"></div>
+  <div class="container">
+    <h1>博客</h1>
+    <h2>记录生活，记录人生！</h2>
+    <!--<p class="masthead-button-links">
+      <a class="btn btn-lg btn-primary btn-shadow" href="http://v3.bootcss.com/" target="_blank" role="button" onclick="_hmt.push(['_trackEvent', 'masthead', 'click', 'masthead-Bootstrap3中文文档'])">Bootstrap3中文文档(v3.3.5)</a>
+    </p>-->
+    <!--<ul class="masthead-links">
+      <li>
+        <a href="http://v2.bootcss.com/" target="_blank" role="button" onclick="_hmt.push(['_trackEvent', 'masthead', 'click', 'masthead-Bootstrap2中文文档'])">Bootstrap2中文文档(v2.3.2)</a>
+      </li>
+    </ul>-->
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">首页</a></li>
+      <li class="active">博客</li>
+    </ol>
+
+    <div class="row">
+      <div class="col-sm-9">
+        <ul class="media-list">
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" width="200" src="http://static.bootcss.com/www/assets/img/codeguide.png" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+            </div>
+          </li>
+
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" width="200" src="http://static.bootcss.com/www/assets/img/codeguide.png" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+            </div>
+          </li>
+
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" width="200" src="http://static.bootcss.com/www/assets/img/codeguide.png" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+            </div>
+          </li>
+
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" width="200" src="http://static.bootcss.com/www/assets/img/codeguide.png" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+            </div>
+          </li>
+
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" width="200" src="http://static.bootcss.com/www/assets/img/codeguide.png" alt="">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <form role="search">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search">
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/">首页</a></li>
-          <li class="active"><a href="blog_index.html">博客</a></li>
-          <li><a href="#">项目</a></li>
-          <li><a href="#">关于</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
-  </nav>
-  <div class="header-place-holder" style="height:60px;"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <div class="title-img"></div>
-    <div class="container">
-      <h3>博客，记录生活，记录人生！</h3>
-    </div>
-  </section>
 
-  <footer>
-    <div class="bottom-nav">
-      <div class="container">
+<footer class="footer ">
+  <div class="container">
+    <div class="row footer-top">
+      <div class="col-sm-6 col-lg-6">
+        <h4>
+          <img src="http://static.bootcss.com/www/assets/img/logo.png">
+        </h4>
+        <p>本网站所列开源项目的中文版文档全部由<a href="http://www.bootcss.com/">Bootstrap中文网</a>成员翻译整理，并全部遵循 <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>协议发布。</p>
+      </div>
+      <div class="col-sm-6  col-lg-5 col-lg-offset-1">
+        <div class="row about">
+          <div class="col-xs-3">
+            <h4>关于</h4>
+            <ul class="list-unstyled">
+              <li><a href="/about/">关于我们</a></li>
+              <li><a href="/ad/">广告合作</a></li>
+              <li><a href="/links/">友情链接</a></li>
+              <li><a href="/hr/">招聘</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-3">
+            <h4>联系方式</h4>
+            <ul class="list-unstyled">
+              <li><a href="http://weibo.com/bootcss" title="Bootstrap中文网官方微博" target="_blank">新浪微博</a></li>
+              <li><a href="mailto:admin@bootcss.com">电子邮件</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-3">
+            <h4>旗下网站</h4>
+            <ul class="list-unstyled">
+              <li><a href="http://www.golaravel.com/" target="_blank">Laravel中文网</a></li>
+              <li><a href="http://www.ghostchina.com/" target="_blank">Ghost中国</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-3">
+            <h4>赞助商</h4>
+            <ul class="list-unstyled">
+              <li><a href="http://www.ucloud.cn/" target="_blank">UCloud</a></li>
+              <li><a href="https://www.upyun.com" target="_blank">又拍云</a></li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="bottom-actions">
-      <div class="container">
-      </div>
+    <hr/>
+    <div class="row footer-bottom">
+      <ul class="list-inline text-center">
+        <li><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备11008151号</a></li><li>京公网安备11010802014853</li>
+      </ul>
     </div>
-    <div class="copy-right">
-      <div class="container">
-        2014-2015 Tony's Site.
-      </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 </body>
 </html>
