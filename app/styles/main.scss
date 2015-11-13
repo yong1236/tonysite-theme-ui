@@ -10,4 +10,15 @@ $navbar-inverse-border: #080808;
 
 body{
   padding-top: 30px;
+  background-color: #fbfbfb; 
+}
+
+.box-common{
+  padding: 15px;
+  color: #666;
+  border: 1px #ffffff solid;
+  background: #ffffff;
+  -webkit-box-shadow: #ececec 0 0 3px;
+  -moz-box-shadow: #ececec 0 0 3px;
+  box-shadow: #ececec 0 0 3px;
 }
