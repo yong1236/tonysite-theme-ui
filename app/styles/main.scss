@@ -6,11 +6,11 @@ $navbar-inverse-border: #080808;
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-@import "header", "footer";
+@import "header", "footer", "home", "blog";
 
 body{
-  padding-top: 30px;
-  background-color: #fbfbfb; 
+  padding-top: 40px;
+  background-color: #fbfbfb;
 }
 
 .box-common{
