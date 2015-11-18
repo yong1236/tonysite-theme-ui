@@ -25,11 +25,11 @@
   .media{
     padding: 8px;
     color: #666;
-    border: 1px #ffffff solid;
+    border: 1px #dddddd solid;
     background: #ffffff;
-    -webkit-box-shadow: #ececec 0 0 3px;
-    -moz-box-shadow: #ececec 0 0 3px;
-    box-shadow: #ececec 0 0 3px;
+    -webkit-box-shadow: #ececec 0 0 5px;
+    -moz-box-shadow: #ececec 0 0 5px;
+    box-shadow: #ececec 0 0 5px;
   }
 
   hr.article-split{
@@ -54,6 +54,13 @@
 }
 .article-content{
   margin: 30px 0;
+}
+
+.article-pager{
+  margin: 0;
+  li{
+    line-height: 2em;
+  }
 }
 
 .sidebar{

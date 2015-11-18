@@ -57,8 +57,8 @@
 </nav>
 
 <div class="jumbotron bloghead">
-  <div id="particleground"></div>
-  <div id="particleground2"></div>
+  <div id="no-particleground"></div>
+  <div id="no-particleground2"></div>
   <div class="container">
     <h1>博客</h1>
     <h2>记录生活，记录人生！</h2>
@@ -88,9 +88,35 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
         <ul class="nav navbar-nav">
-          <li class="active current-menu-item"><a href="/">博客</a></li>
-          <li><a href="blog_index.html">系列文章</a></li>
-          <li><a href="#">技术笔记</a></li>
+          <li class="active current-menu-item"><a href="/blog_index.html">博客</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">系列文章 <span class="caret"></span></a>
+            <ul  class="dropdown-menu">
+              <li><a href="#">Java基础系列</a></li>
+              <li><a href="#">J2EE基础系列</a></li>
+              <li><a href="#">J2EE高级系列</a></li>
+              <li><a href="#">J2EE框架系列</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">技术笔记 <span class="caret"></span></a>
+            <ul  class="dropdown-menu">
+              <li><a href="#">Java</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">C/C++</a></li>
+              <li><a href="#">Go Lang</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Wordpress</a></li>
+              <li><a href="#">Spring</a></li>
+              <li><a href="#">MyBatis</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Linux</a></li>
+            </ul>
+          </li>
           <li><a href="#">札记随笔</a></li>
         </ul>
       </div>
@@ -100,10 +126,10 @@
 
 <section>
   <div class="container">
-    <!--<ol class="breadcrumb">
+    <ol class="breadcrumb">
       <li><a href="/">首页</a></li>
       <li class="active">博客</li>
-    </ol>-->
+    </ol>
 
     <div class="row">
       <div class="col-sm-9">
@@ -531,5 +557,38 @@
     </div>
   </div>
 </footer>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<script src="/bower_components/particleground/jquery.particleground.js"></script>
+<!-- endbuild -->
+<!-- 不明白写在里边为什么会消失 -->
+<!--<script src="/bower_components/particleground/jquery.particleground.js"></script>-->
+
+
+<!-- build:js(.) scripts/plugins.js -->
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+<!-- endbuild -->
+
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<script src="scripts/randabout.js"></script>
+<!-- endbuild -->
+
 </body>
 </html>
