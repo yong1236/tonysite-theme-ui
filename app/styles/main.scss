@@ -24,3 +24,42 @@ body{
   -moz-box-shadow: #ececec 0 0 5px;
   box-shadow: #ececec 0 0 5px;
 }
+
+.nav li{
+  position: relative;
+
+  .sub-menu{
+    display: none;
+    position: absolute;
+    list-style: none;
+    border: 1px solid #EEEEEE;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+
+    .menu-item{
+      line-height: 2em;
+
+      a{
+        color: #999;
+        text-decoration: none;
+        display: block;
+        padding: 8px 15px;
+        white-space: nowrap;
+      }
+
+      &:hover{
+        background: #f8f8f8;
+
+        a{
+          color: #333;
+        }
+      }
+    }
+  }
+
+  &:hover .sub-menu{
+    display: block;
+  }
+}
