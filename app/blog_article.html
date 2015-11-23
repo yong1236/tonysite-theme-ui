@@ -57,8 +57,8 @@
 </nav>
 
 <div class="jumbotron bloghead">
-  <div id="particleground"></div>
-  <div id="particleground2"></div>
+  <div id="no-particleground"></div>
+  <div id="no-particleground2"></div>
   <div class="container">
     <h1>博客</h1>
     <h2>记录生活，记录人生！</h2>
@@ -73,7 +73,7 @@
   </div>
 </div>
 <div>
-  <nav class="navbar navbar-default navbar-static-top">
+  <nav id="navbar-blog" class="navbar navbar-default navbar-static-top navbar-blog">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -498,5 +498,37 @@
     </div>
   </div>
 </footer>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<script src="/bower_components/particleground/jquery.particleground.js"></script>
+<!-- endbuild -->
+<!-- 不明白写在里边为什么会消失 -->
+<!--<script src="/bower_components/particleground/jquery.particleground.js"></script>-->
+
+
+<!-- build:js(.) scripts/plugins.js -->
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+<!-- endbuild -->
+
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<script src="scripts/randabout.js"></script>
+<!-- endbuild -->
 </body>
 </html>

@@ -43,4 +43,16 @@ $(function(){
     });
   })();
 
+  //初始化博客菜单滚动事件
+  (function(){
+    $(window).scroll(function () {
+      if ($(window).scrollTop()>=200){
+        console.log($(window).scrollTop());
+        $("#navbar-blog").addClass("navbar-blog-fixed");
+      }else{
+        $("#navbar-blog").removeClass("navbar-blog-fixed");
+      }
+    });
+  })();
+
 });

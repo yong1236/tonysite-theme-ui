@@ -171,3 +171,11 @@ aside{
     padding-left: 8px;
   }
 }
+
+.navbar-blog{
+  &-fixed{
+    position: fixed;
+    top: 42px;
+    width: 100%;
+  }
+}
