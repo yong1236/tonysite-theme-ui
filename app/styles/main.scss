@@ -12,7 +12,7 @@ $navbar-inverse-border: #080808;
 body{
   //padding-top: 40px;
   border-top: 42px solid #282828;
-  background-color: #EEEEEE;//#f5f5f5; //#fbfbfb;
+  background-color: #fefefe;//#f5f5f5; //#fbfbfb;
 }
 
 .box-common{
@@ -22,9 +22,9 @@ body{
   //border: 1px #e7e7e7 solid;
   border: 1px #dddddd solid;
   background: #ffffff;
-  -webkit-box-shadow: #ececec 0 0 5px; //3px
-  -moz-box-shadow: #ececec 0 0 5px;
-  box-shadow: #ececec 0 0 5px;
+  //-webkit-box-shadow: #ececec 0 0 3px; //3px
+  //-moz-box-shadow: #ececec 0 0 3px;
+  //box-shadow: #ececec 0 0 3px;
 }
 
 .nav li{
@@ -68,4 +68,8 @@ body{
 
 .screen-reader-text{
   display: none;
+}
+
+.breadcrumb{
+  background-color: #f8f8f8;
 }

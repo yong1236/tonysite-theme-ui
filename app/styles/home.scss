@@ -178,13 +178,14 @@ html,body{
     border-radius: 0;
 
     .caption {
-      height: 200px;
+      height: 90px; //200
       overflow-y: hidden;
       color: #555;
     }
   }
 }
 
+/*
 @media screen and (min-width: 768px){
   .masthead {
     padding: 90px 0 110px;
@@ -215,3 +216,4 @@ html,body{
     }
   }
 }
+*/
